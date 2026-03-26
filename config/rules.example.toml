@@ -1,0 +1,44 @@
+default_action = "keep"
+max_body_chars = 4000
+
+[[rules]]
+name = "Receipts"
+action = "move"
+destination = "Receipts"
+match = "any"
+
+[[rules.conditions]]
+field = "subject"
+operator = "regex"
+value = '(?i)\b(receipt|order receipt|payment receipt|purchase receipt|delivered|delivery update)\b'
+
+[[rules]]
+name = "Verification codes"
+action = "trash"
+match = "any"
+
+[[rules.conditions]]
+field = "subject"
+operator = "regex"
+value = '(?i)(verification code|login code|security code|one-time password|otp)'
+
+[[rules]]
+name = "Newsletters"
+action = "trash"
+match = "any"
+
+[[rules.conditions]]
+field = "header"
+header = "List-Id"
+operator = "regex"
+value = '(?i)(newsletter|digest)'
+
+[[rules]]
+name = "Family"
+action = "move"
+destination = "Family"
+
+[[rules.conditions]]
+field = "from"
+operator = "equals"
+value = "family-member@example.com"

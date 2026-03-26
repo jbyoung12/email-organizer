@@ -1,0 +1,4 @@
+interface:
+  display_name: "Email Categorizer"
+  short_description: "Apply local IMAP rules to move or trash email on demand"
+  default_prompt: "Use the configured email categorizer in dry-run mode on already-read mail, oldest-first, scanning the full selected mailbox unless the user explicitly asks to apply changes or change scope/order."

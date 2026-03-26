@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local mailbox config and personal rules should not be committed.
+/config/account.toml
+/config/rules.toml
+
+# Virtualenvs and local tooling output.
+.venv/
+.pytest_cache/

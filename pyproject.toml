@@ -1,0 +1,13 @@
+[project]
+name = "email-categorizer"
+version = "0.1.0"
+description = "Prompt-driven IMAP email categorizer with deterministic rules."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+email-categorizer = "email_categorizer.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

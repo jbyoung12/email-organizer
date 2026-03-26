@@ -1,0 +1,16 @@
+# IMAP account settings.
+# Keep the password out of this file.
+# Choose either:
+# - password_source = "env" and set the env var named in `password_env`
+# - password_source = "keychain" and store the password in macOS Keychain
+
+host = "imap.example.com"
+port = 993
+username = "you@example.com"
+password_source = "keychain"
+password_env = "EMAIL_CATEGORIZER_PASSWORD"
+keychain_service = "email-categorizer-imap"
+keychain_account = "you@example.com"
+mailbox = "INBOX"
+trash_folder = "Trash"
+use_ssl = true
