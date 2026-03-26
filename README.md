@@ -123,18 +123,6 @@ python3 -m email_categorizer --scope read --order oldest --json
 
 The repo also contains an optional OpenClaw skill in `skills/email-categorizer/`.
 
-## Publishable Layout
-
-Files intended for local-only use are ignored:
-
-- `config/account.toml`
-- `config/rules.toml`
-
-Files intended for the public repo:
-
-- `config/account.example.toml`
-- `config/rules.example.toml`
-
 ## Tests
 
 ```bash
