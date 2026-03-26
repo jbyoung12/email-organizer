@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+.coverage
 
 # Local mailbox config and personal rules should not be committed.
 /config/account.toml
